@@ -16,9 +16,9 @@ This is a simple project to demonstrate face tracking with the Tello drone using
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Demo](#demo)
+- [Inspiration](#inspiration)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Prerequisites
 
@@ -41,14 +41,12 @@ To get started with this project, you will need:
 2. Connect your Tello drone to your computer using Wi-Fi.
 3. Run the `face_tracking.py` file with Python by running `python face_tracking.py` in your terminal.
 
-## Demo
+## Inspiration
 
-Check out the demo of this project on YouTube: [Tello Drone Face Tracking Demo](https://www.youtube.com/watch?v=abcdefg)
+Check inspirations of this project on YouTube: [Tello Drone Face Tracking Demo](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=8107s)
 
 ## Contributing
 
 If you find any bugs or want to contribute to this project, feel free to submit a pull request.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
