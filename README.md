@@ -39,7 +39,7 @@ To get started with this project, you will need:
 
 1. Clone this repository to your local machine.
 2. Connect your Tello drone to your computer using Wi-Fi.
-3. Run the `face_tracking.py` file with Python by running `python face_tracking.py` in your terminal.
+3. Run the `face_tracking.py` file in in the `Face Tracking` directory with Python by running `python face_tracking.py` in your terminal or by using visual studio code.
 
 ## Inspiration
 
