@@ -1,7 +1,7 @@
 from djitellopy import Tello
 
-ssid = "Your wifi network name"
-password = "Your wifi password"
+ssid = "CGA2121_c2W3n6M"
+password = "hnCygzRt7AB5Wc9V3W"
 
 # Create a Tello object
 drone = Tello()
