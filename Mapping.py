@@ -1,4 +1,4 @@
-# Import necessary modules
+# Import necessary liberaries
 from djitellopy import tello
 import KeyModule as kp
 import numpy as np
