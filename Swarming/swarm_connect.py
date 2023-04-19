@@ -1,6 +1,6 @@
 # This file should connect your drone to a Wi-Fi network
 # Run this file for every single drone
-# Log into your Wi-Fi portal and retrieve the ip addresses
+# Log into your Wi-Fi portal and retrieve the ip addresses (http://192.168.0.1/)
 
 from djitellopy import Tello
 
