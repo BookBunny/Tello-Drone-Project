@@ -1,3 +1,5 @@
+import time
+
 from djitellopy import TelloSwarm
 
 drones = ['192.168.10.1', '192.168.10.2', '192.168.10.3', '192.168.10.4']
@@ -5,25 +7,25 @@ drones = ['192.168.10.1', '192.168.10.2', '192.168.10.3', '192.168.10.4']
 # Create a TelloSwarm object with 4 drones
 swarm = TelloSwarm.fromIps(drones)
 
-# Set the second drone as the master drone
-swarm.set_master('192.168.10.2')
-
-# Connect to the drones
 swarm.connect()
 
-# Take off all the drones
+# all drones take off
 swarm.takeoff()
 
-# Fly the drones in a square pattern
-for i in range(4):
-    swarm.move_forward(100)
-    swarm.rotate_clockwise(90)
+time.sleep(2)
+# run in parallel on all tellos
+swarm.move_up(100)
 
-# Flip all the drones to the left
-swarm.flip_left()
 
-# Land all the drones
+time.sleep(2)
+# run by one tello after the other
+swarm.sequential(lambda i, tello: tello.move_forward(i * 20 + 20))
+
+time.sleep(2)
+# making each tello do something unique in parallel
+swarm.parallel(lambda i, tello: tello.move_left(i * 100 + 20))
+
+
+time.sleep(2)
 swarm.land()
-
-# Disconnect from the drones
 swarm.end()
