@@ -113,10 +113,7 @@ def drawPoints(img, points, yawAngle):
     cv2.putText(img, f'Actual Yaw angle: {yawAngle} degrees',
                 (points[-1][0] + 10, points[-1][1] + 50), cv2.FONT_HERSHEY_PLAIN, 1,
                 (255, 0, 255), 1)
-    # cv2.putText(img, f'Actual Yaw angle: {yawAngle:.2f} degrees',
-    #             (points[-1][0] + 10, points[-1][1] + 50), cv2.FONT_HERSHEY_PLAIN, 1,
-    #             (255, 0, 255), 1)
-
+   
 
 while True:
 
